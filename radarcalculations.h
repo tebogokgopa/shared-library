@@ -25,11 +25,11 @@ namespace rcs{
       static double antennaGainFrequency(double frequency,double antennaApertureArea,string effeciency);
       static double antennaGainBeamwidth(double horizontalBeamwidth,double verticalBeamwidth,string antennaType);
       static double radarCell(double pulsewidth);
-      static double radarCell(double beamwidth,double rangeFromRadar);
+      static double radarCell(double beamwidth,double rangeFromRadar,string rangeMetric);
       static double maximumUnambiguousRange(double pulseRepetitionInterval);
-      static double radarHorizon(double heightRadar,double heightRadarCrossSection,double heightEsm);
+      static double radarHorizon(double heightRadar,double heightRadarCrossSection,string rangeMetric);
       static double twoWayMonostaticRadarRange(double powerTransmitter,double gainTransmitter,double gainReciever,
-                                                    double frequency,double waveLength,double radarCrossSection,double range);
+                                                    double frequency,double radarCrossSection,double range);
       static double powerAtReciever(double pulseWidth,double bandWidth,double signalToNoise,double noiseFigure);
       static double twoWayRadarRangeOne(double powerAtTransmitter,double gainTransmitter,double gainReciever,double frequency,
                                         double waveLength,double radarCrossSection,double powerOfReciever);
