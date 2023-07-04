@@ -8,12 +8,10 @@
 #include "radarcalculations.h"
 #include <iostream>
 #include <string>
-
+#include "macros.h"
+#include "util.h"
 using namespace std;
-#define SPEED_OF_LIGHT 299792460
-#define PI 3.14159265358979
-#define RECTANGULAR_EFFECIENCY 0.7
-#define ELLIPTICAL_EFFECIENCY 0.55
+
 namespace rcs{
 
   /*
@@ -60,13 +58,7 @@ namespace rcs{
     return (pulsewidth * SPEED_OF_LIGHT)/2;
   }
     
-  /*
-   *
-   * */
-    double toRadians(double degrees){
-        
-        return (degrees * PI)/180;
-    }
+  
   /*
    *
    */
